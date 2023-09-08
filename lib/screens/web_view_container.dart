@@ -1,24 +1,37 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-
-class WebViewContainer extends StatefulWidget {
-  const WebViewContainer({super.key});
+class WebViewApp extends StatefulWidget {
+  const WebViewApp({super.key});
 
   @override
-  State<WebViewContainer> createState() => _WebViewContainerState();
+  State<WebViewApp> createState() => _WebViewAppState();
 }
 
-class _WebViewContainerState extends State<WebViewContainer> {
-final controller = WebViewController()
-..setJavaScriptMode(JavaScriptMode.unrestricted)
-..loadRequest(Uri.parse("https://github.com/MurimiCaroline"));
+class _WebViewAppState extends State<WebViewApp> {
+  late final WebViewController controller;
 
+  @override
+  void initState() {
+    super.initState();
+    controller = WebViewController()
+      ..loadRequest(
+        Uri.parse('https://github.com/MurimiCaroline'),
+      );
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: WebViewWidget(controller: controller) ,
+    return SafeArea(
+      
+        : Scaffold(
+        appBar: AppBar(
+          title: const Text('My Github'),
+        ),
+        body: WebViewWidget(
+          controller: controller,
+        ),
+      ),
     );
   }
 }
