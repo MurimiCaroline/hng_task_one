@@ -24,12 +24,16 @@ class _WebViewAppState extends State<WebViewApp> {
   Widget build(BuildContext context) {
     return SafeArea(
       
-        : Scaffold(
+      child: Scaffold(
         appBar: AppBar(
           title: const Text('My Github'),
         ),
-        body: WebViewWidget(
-          controller: controller,
+        body: Container(
+          height: MediaQuery.of(context).size.height*0.8,
+          width: MediaQuery.of(context).size.width,
+          child: WebViewWidget(
+            controller: controller,
+          ),
         ),
       ),
     );

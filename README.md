@@ -1,16 +1,11 @@
 # hng_task_one
 
-A new Flutter project.
+This is my first submission of the hng internship task one.
 
-## Getting Started
+I have assumed that the app will run on an android device.
 
-This project is a starting point for a Flutter application.
+My environment has Flutter  version 3.13.2 and Dart version 3.1.0.
 
-A few resources to get you started if this is your first Flutter project:
+I have set the minimum SDK version to 19.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+To run the app, you can clone this repository and use an android emulator to visualize.
