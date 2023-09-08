@@ -12,3 +12,5 @@ To run the app, you can clone this repository and use an android emulator to vis
 
 I have also assumed that the Github navigation bar is failing to be responsive due to an error that I cannot handle on my end. I have wrapped the WebView with a container that takes up the 
 whole width but the Github Navigation bar remains unreponsive.
+
+My Appetize.io link is https://appetize.io/app/plspdsij5ozuzi534acum63ine?device=pixel4&osVersion=10.0&scale=75. 
